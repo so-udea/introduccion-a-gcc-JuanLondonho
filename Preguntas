@@ -1,0 +1,23 @@
+¿Que hacen los parametros arg y argv?
+El parametro argc contiene la cantidad de argumentos que recibe el main y
+argv contiene los argumentos que se han pasado en un array de punteros a
+caracteres.
+
+¿Como se usa el programa? (Observe el video)
+Primero se debe guardar el código en un archivo de texto .c, luego en consola
+se compila de la manera gcc -o ch51 ch51.c, luego lo ejecuta de la manera
+./ch51, si no se envian parametros, por defecto la cantidad(argc) será 1 y el
+argv[] contendrá el nombre del programa.
+
+La manera correcta de enviar los parametros es de la foma
+./ch51 [parametro1] [parametro2] ... [parametroN]
+
+Al inicio, imprime la cantidad de argumentos que le llegaron,
+luego, el programa recorre todos estos argumentos  y valida las 5 primeras
+letras de cada uno  para ver si coinciden con "debug" que significa que el
+programa esta en MODO DEBUG y también lo compara con "-file" para saber si
+esta leyendo algun archivo, el cual en caso afirmativo se encontrará en el 
+próximo argumento. 
+
+Antes de finalizar imprime un texto, para indicar que el programa está 
+finalizado.
